@@ -1,13 +1,7 @@
 let slideIndex = 1;
 
-let navOpen = () => {};
-
 let stylesControl = (control) => {
   showSlide((slideIndex += control));
-};
-
-let currentSlide = (number) => {
-  showSlide(slideIndex);
 };
 
 function showSlide(number) {
