@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="controlBtn" onclick="stylesControl(-1)">
+          <p class="arrow">&larr;</p>
+        </div>
+        <div class="slideContainer">
+          <img src="./Images/slide1.png" alt="css" class="slide" />
+          <img src="./Images/slide2.png" alt="excel" class="slide" />
+          <img src="./Images/slide3.png" alt="github" class="slide" />
+          <img src="./Images/slide4.png" alt="jest" class="slide" />
+          <img src="./Images/slide5.png" alt="js" class="slide" />
+          <img src="./Images/slide6.png" alt="node" class="slide" />
+          <img src="./Images/slide7.png" alt="react native" class="slide" />
+          <img src="./Images/slide8.png" alt="vs code" class="slide" />
+          <img src="./Images/slide9.png" alt="word" class="slide" />
+        </div>
+
+        <div class="controlBtn" onclick="stylesControl(1)">
+          <p class="arrow">&rarr;</p>
+        </div>
+      </div>
+      <div class="dots">
+        <div class="dot" onclick="dotControl(1)"></div>
+        <div class="dot" onclick="dotControl(2)"></div>
+        <div class="dot" onclick="dotControl(3)"></div>
+        <div class="dot" onclick="dotControl(4)"></div>
+        <div class="dot" onclick="dotControl(5)"></div>
+        <div class="dot" onclick="dotControl(6)"></div>
+        <div class="dot" onclick="dotControl(7)"></div>
+        <div class="dot" onclick="dotControl(8)"></div>
+        <div class="dot" onclick="dotControl(9)"></div>
+      </div>
+    </main>
+    <script src="slider.js"></script>
+  </body>
+</html>

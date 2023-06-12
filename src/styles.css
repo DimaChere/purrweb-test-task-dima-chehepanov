@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  width: 500px;
+  height: 500px;
+  background-color: rgba(211, 211, 211, 0.3);
+  border-radius: 50%;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin: 0 5px;
+}
+.active,
+.dot:hover {
+  background-color: rgba(0, 128, 0, 0.5);
+}
+
+.slide {
+  display: none;
+  width: 100%;
+}
+.slideContainer {
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  width: 60%;
+}
+#slide {
+  display: none;
+  width: 60%;
+}
+
+.controlBtn {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  height: 15%;
+  font-size: x-large;
+  background-color: rgba(211, 211, 211, 0.3);
+  border-radius: 25%;
+  cursor: pointer;
+}
+
+.controlBtn:hover {
+  background-color: rgba(211, 211, 211, 0.5);
+  border: 2px solid rgba(211, 211, 211, 0.2);
+}
+
+.arrow {
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.4);
+}
