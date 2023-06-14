@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap");
+@import url(styles/text.css);
+@import url(styles/header.css);
+@import url(styles/underHeader.css);
+@import url(styles/influencerArticle.css);
+@import url(styles/aboutBudss.css);
+@import url(styles/howBudssWorks.css);
+@import url(styles/percents.css);
+@import url(styles/whyBudss.css);
+@import url(styles/business.css);
+@import url(styles/footer.css);
+
+body {
+  background-color: #181818;
+  font-family: "Outfit", sans-serif;
+  color: white;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+@media (min-width: 1440px) {
+}

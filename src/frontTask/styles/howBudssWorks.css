@@ -1,0 +1,136 @@
+/* HOW BUDSS WORKS */
+.howBudssWorks {
+  margin: 80px 0;
+  position: relative;
+  height: 540px;
+}
+.phone {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.phoneVideo {
+  width: 205px;
+  position: absolute;
+  border-radius: 30px;
+}
+.ramka {
+  width: 228px;
+  position: absolute;
+}
+
+@keyframes row1 {
+  0% {
+    left: -1024px;
+  }
+  100% {
+    left: -210px;
+  }
+}
+
+@keyframes row2 {
+  0% {
+    left: -302px;
+  }
+  100% {
+    left: -1116px;
+  }
+}
+
+@keyframes row3 {
+  0% {
+    left: -1105px;
+  }
+  100% {
+    left: -291px;
+  }
+}
+
+.letters {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  overflow-x: hidden;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  transition: all 1s ease;
+}
+.row1 {
+  position: relative;
+  animation: row1 10s linear infinite;
+}
+.row2 {
+  position: relative;
+  animation: row2 10s linear infinite;
+}
+.row3 {
+  position: relative;
+  animation: row3 10s linear infinite;
+}
+.letterRow1 {
+  color: #2fdbbc;
+}
+.letterRow2 {
+  color: #a64ced;
+}
+.letterRow3 {
+  color: #ffaa4c;
+}
+
+.letterTransparent {
+  color: #181818;
+  text-shadow: -1px -1px 0 #444444, 1px -1px 0 #444444, -1px 1px 0 #444444,
+    1px 1px 0 #444444;
+}
+
+@media (min-width: 1440px) {
+  .howBudssWorks {
+    margin: 106px 0;
+    position: relative;
+    height: 697px;
+  }
+
+  .phoneVideo {
+    width: 308px;
+    position: absolute;
+    border-radius: 30px;
+  }
+  .ramka {
+    width: 345px;
+    position: absolute;
+  }
+
+  @keyframes row1 {
+    0% {
+      left: -2421px;
+    }
+    100% {
+      left: -317px;
+    }
+  }
+
+  @keyframes row2 {
+    0% {
+      left: -108px;
+    }
+    100% {
+      left: -2212px;
+    }
+  }
+
+  @keyframes row3 {
+    0% {
+      left: -2663px;
+    }
+    100% {
+      left: -559px;
+    }
+  }
+}

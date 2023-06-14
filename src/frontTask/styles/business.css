@@ -1,0 +1,137 @@
+.business {
+  background-color: white;
+  padding: 40px 16px;
+}
+
+.letYourBusinesGrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #d9d9d9;
+  border-radius: 60px;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.brandAvarenes {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.brandAvarenes_text {
+  margin-bottom: 20px;
+}
+
+.businessImages {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+}
+
+.businessImg {
+  width: 64px;
+}
+
+.businessImg:nth-child(odd) {
+  margin-bottom: 64px;
+}
+
+.businessImg:nth-child(even) {
+  margin-top: 64px;
+}
+
+.companies {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.company {
+  height: 42px;
+  margin-bottom: 30px;
+}
+
+.square {
+  height: 34px;
+}
+.shopify {
+  height: 42px;
+}
+
+.wooComerce {
+  height: 43px;
+}
+
+.squarespace {
+  height: 28px;
+}
+
+.clover {
+  height: 32px;
+}
+
+@media (min-width: 1440px) {
+  .business {
+    background-color: white;
+    padding: 100px 60px;
+  }
+
+  .letYourBusinesGrow {
+    padding: 60px 0px;
+  }
+
+  .brandAvarenes {
+    margin: 100px 0;
+    flex-direction: row;
+  }
+
+  .brandAvarenes_text {
+    margin-bottom: 0px;
+    flex: 4;
+  }
+  .businessImages {
+    height: 272px;
+    flex: 2;
+  }
+  .businessImg {
+    width: 90px;
+  }
+
+  .businessImg:nth-child(odd) {
+    margin-bottom: 90px;
+  }
+
+  .businessImg:nth-child(even) {
+    margin-top: 90px;
+  }
+
+  .wooComerce {
+    height: 60px;
+    order: 1;
+  }
+
+  .shopify {
+    height: 60px;
+    order: 2;
+  }
+
+  .square {
+    height: 48px;
+    order: 3;
+  }
+
+  .squarespace {
+    height: 40px;
+    order: 4;
+  }
+
+  .clover {
+    height: 44px;
+    order: 5;
+  }
+}

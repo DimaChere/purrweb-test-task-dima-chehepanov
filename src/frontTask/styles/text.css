@@ -1,0 +1,245 @@
+/* TEXT CONTENT */
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+.headline,
+.headlineBusiness {
+  font-size: 40px;
+  line-height: 42px;
+  font-weight: 700;
+}
+
+.contactSales_text {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 600;
+}
+
+.headlineSmall {
+  font-size: 32px;
+  line-height: 33px;
+  font-weight: 700;
+}
+
+.headlinePercent {
+  font-size: 40px;
+  line-height: 42px;
+  margin-right: 20px;
+  font-weight: 700;
+}
+
+.headlineWhyBudss,
+.headlineBusiness_small {
+  font-size: 40px;
+  line-height: 42px;
+  font-weight: 700;
+}
+
+.headlineWhyBudssArticle {
+  font-size: 32px;
+  line-height: 33px;
+  font-weight: 700;
+}
+
+.headlineBusiness_small,
+.headlineBusiness,
+.contentBusiness {
+  color: black;
+}
+
+.headlineBusiness_small {
+  margin-bottom: 40px;
+}
+
+.headlineBusiness {
+  margin-bottom: 20px;
+}
+
+.contentSmall {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.contentAboutUs {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  margin-top: 16px;
+}
+
+.contentMedium {
+  position: relative;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.letter {
+  display: inline-flex;
+  font-size: 48px;
+  line-height: 50px;
+  font-weight: 700;
+  white-space: nowrap;
+  transform: all 0.5s ease;
+  margin: 0 10px;
+}
+
+.contentPercent {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.contentWhyBudss {
+  position: relative;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.contentWhyBudssArticle {
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.contentBusiness {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.link {
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-bottom: 16px;
+}
+
+.link:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.copyright {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 300;
+  color: #b9b9b9;
+}
+
+.footerLink {
+  display: none;
+  color: #b9b9b9;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 600;
+}
+@media (min-width: 1440px) {
+  /* TEXT CONTENT */
+  .headline,
+  .headlineBusiness {
+    font-size: 96px;
+    line-height: 101px;
+    font-weight: 700;
+  }
+
+  .headlineSmall {
+    font-size: 48px;
+    line-height: 50px;
+  }
+
+  .headlinePercent {
+    font-size: 64px;
+    line-height: 67px;
+    font-weight: 700;
+  }
+
+  .headlineWhyBudss,
+  .headlineBusiness_small {
+    font-size: 64px;
+    line-height: 67px;
+    font-weight: 700;
+  }
+
+  .headlineWhyBudssArticle {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 600;
+  }
+
+  .contentSmall {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 534px;
+  }
+
+  .contentAboutUs {
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 20px;
+  }
+
+  .contentMedium {
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 600;
+  }
+
+  .letter {
+    font-size: 128px;
+    line-height: 135px;
+  }
+
+  .contentPercent {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 600;
+    white-space: normal;
+  }
+
+  .contentWhyBudss {
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 600;
+  }
+
+  .contentWhyBudssArticle {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  .contentBusiness {
+    width: 66%;
+  }
+
+  .link {
+    margin-bottom: 0;
+  }
+
+  .link:nth-child(1) {
+    margin-right: 40px;
+  }
+
+  .footerLink {
+    display: inline;
+    margin-left: 20px;
+  }
+
+  .phoneLink {
+    display: none;
+  }
+}

@@ -1,0 +1,144 @@
+/* ABOUT BUDSS */
+.aboutBudss {
+  padding: 0 16px;
+}
+
+.aboutUsBlock {
+  overflow-x: hidden;
+  position: relative;
+  margin-top: 30px;
+}
+
+.purpuleBlock {
+  position: absolute;
+  bottom: 0;
+  left: 38px;
+  width: 235px;
+  height: 24px;
+  border-radius: 999px;
+  background-color: #a64ced;
+  rotate: -1deg;
+  z-index: 1;
+}
+
+.shortDescription {
+  position: relative;
+  width: 400px;
+  height: 100%;
+}
+
+.aboutUsContent {
+  margin-top: 48px;
+  width: 792px;
+}
+
+.aboutSection {
+  width: 336px;
+  margin-bottom: 90px;
+}
+@media (min-width: 1440px) {
+  /* ABOUT BUDSS */
+  .aboutBudss {
+    position: relative;
+    overflow-y: hidden;
+    padding: 0 60px;
+  }
+
+  .aboutUsBlock {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+  }
+
+  .purpuleBlock {
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    width: 355px;
+    height: 35px;
+    background-color: #a64ced;
+    rotate: -1deg;
+    z-index: 1;
+  }
+  .aboutUsContent {
+    margin: 0;
+    width: 920px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+  }
+
+  .aboutSection {
+    margin-right: 70px;
+    margin-bottom: 90px;
+  }
+
+  .decoration1 {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 65px;
+    left: -320px;
+    width: 630px;
+    height: 385px;
+    border: 150px solid #ffaa4c;
+    border-radius: 999px;
+    opacity: 0.7;
+  }
+  .decoration2 {
+    position: absolute;
+    box-sizing: border-box;
+    bottom: -170px;
+    left: -180px;
+    width: 609px;
+    height: 384px;
+    border: 150px solid #a64ced;
+    border-radius: 999px;
+    opacity: 0.7;
+  }
+}
+@media (min-width: 1440px) {
+  .howBudssWorks {
+    margin: 106px 0;
+    position: relative;
+    height: 697px;
+  }
+
+  .phoneVideo {
+    width: 308px;
+    position: absolute;
+    border-radius: 30px;
+  }
+  .ramka {
+    width: 345px;
+    position: absolute;
+  }
+
+  @keyframes row1 {
+    0% {
+      left: -2421px;
+    }
+    100% {
+      left: -317px;
+    }
+  }
+
+  @keyframes row2 {
+    0% {
+      left: -108px;
+    }
+    100% {
+      left: -2212px;
+    }
+  }
+
+  @keyframes row3 {
+    0% {
+      left: -2663px;
+    }
+    100% {
+      left: -559px;
+    }
+  }
+}
