@@ -1,0 +1,57 @@
+.contactSales_container {
+  position: fixed;
+  top: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.contactSales_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  position: relative;
+  width: max-content;
+  height: max-content;
+  padding: 20px 16px;
+  background-color: white;
+  border-radius: 20px;
+}
+.cross_small {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+input {
+  box-sizing: border-box;
+  width: 303px;
+  padding: 10px 16px;
+  margin-bottom: 10px;
+  border: 1px solid #f1f1f1;
+  border-radius: 14px;
+}
+
+input:nth-child(11) {
+  margin-bottom: 0px;
+}
+
+.contactSales_form_btn {
+  text-align: center;
+  padding: 16px 0;
+  width: 303px;
+  background-color: #b9b9b9;
+  border-radius: 16px;
+}
+
+@media (min-width: 1440px) {
+  input {
+    width: 337px;
+  }
+}

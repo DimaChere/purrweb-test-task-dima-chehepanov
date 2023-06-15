@@ -146,6 +146,31 @@ h5 {
   line-height: 19px;
   font-weight: 600;
 }
+
+label {
+  color: #070707;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+input {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.contentPrivacyPolicy {
+  margin: 20px 0;
+  width: 303px;
+  color: black;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 300;
+}
+.form_link {
+  color: #954ced;
+}
 @media (min-width: 1440px) {
   /* TEXT CONTENT */
   .headline,
@@ -241,5 +266,8 @@ h5 {
 
   .phoneLink {
     display: none;
+  }
+  .contentPrivacyPolicy {
+    width: 337px;
   }
 }

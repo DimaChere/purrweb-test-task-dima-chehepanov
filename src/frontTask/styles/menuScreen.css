@@ -1,0 +1,28 @@
+.menuScreen {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #181818;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  padding: 16px;
+  padding-bottom: 24vh;
+}
+.cross {
+  width: 40px;
+  margin-left: auto;
+}
+
+.marginNone {
+  margin: 0;
+}
+
+@media (min-width: 1440px) {
+  .menuScreen {
+    display: none;
+  }
+}
