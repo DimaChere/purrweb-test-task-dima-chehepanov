@@ -38,6 +38,12 @@ function switchHideThanks() {
   document.getElementsByClassName("contactSales_container")[0].style.display =
     "none";
 }
+
+function hideCookies() {
+  document.getElementsByClassName("cookies_container")[0].style.display =
+    "none";
+}
+
 let inp = document.querySelector("#phone");
 
 window.addEventListener("DOMContentLoaded", function () {

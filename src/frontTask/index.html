@@ -8,7 +8,6 @@
   </head>
 
   <body>
-    <div class="coocies"></div>
     <header>
       <h2 class="headerOption chosen">For Business</h2>
       <h2 class="headerOption">For Customers</h2>
@@ -329,48 +328,6 @@
           <img src="images/clover.svg" alt="clover" class="company clover" />
         </div>
       </div>
-
-      <footer>
-        <div class="upperFooter">
-          <div class="logoContainer">
-            <img src="./images/logo.svg" alt="logo" class="logo" />
-            <h2 class="logoName">budss</h2>
-          </div>
-          <div class="footerLinks">
-            <a href="/" class="link">For Business</a>
-            <a href="/" class="link">For Customers</a>
-            <a href="/" class="link phoneLink">Privacy Policy</a>
-            <a href="/" class="link phoneLink">Terms Of Use Seller</a>
-            <a href="/" class="link phoneLink"
-              >Terms of Use Sellers & Customers</a
-            >
-          </div>
-          <div class="download">
-            <div class="contactSales_footer" onclick="switchVisible_form()">
-              <p class="contactSales_text">Contact sales</p>
-            </div>
-            <img
-              src="images/appstore.svg"
-              alt="appstore"
-              class="download_margin"
-            />
-            <img src="images/googleplay.svg" alt="googleplay" />
-          </div>
-        </div>
-        <div class="bottomFooter">
-          <p class="copyright">
-            © Copyright 2023, All Rights Reserved by Budss
-          </p>
-          <div class="bottomFooter_links">
-            <a href="/" class="footerLink">Privacy Policy</a>
-            <a href="/" class="footerLink">Terms Of Use - Seller</a>
-            <a href="/" class="footerLink"
-              >Terms of Use - Sellers & Customers</a
-            >
-          </div>
-        </div>
-      </footer>
-
       <!-- HIDEN ELEMENTS -->
       <div class="menuScreen">
         <img
@@ -471,7 +428,66 @@
           </div>
         </div>
       </div>
+      <div class="cookies_container">
+        <div class="cookies">
+          <img
+            src="images/cross_small.svg"
+            alt="cross_small"
+            class="cross_cookies"
+            onclick="hideCookies()"
+          />
+          <p class="contentCookies">
+            This website uses cookies to ensure you get the best experience on
+            our website. They also allow us to analyze user behavior in order to
+            constantly improve the website for you.
+          </p>
+          <div class="agreeBlock">
+            <div class="acceptBtn">
+              <p class="contentAccept" onclick="hideCookies()">Accept</p>
+            </div>
+            <div class="declineBtn">
+              <p class="contentDecline" onclick="hideCookies()">Decline</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+    <footer>
+      <div class="upperFooter">
+        <div class="logoContainer">
+          <img src="./images/logo.svg" alt="logo" class="logo" />
+          <h2 class="logoName">budss</h2>
+        </div>
+        <div class="footerLinks">
+          <a href="/" class="link">For Business</a>
+          <a href="/" class="link">For Customers</a>
+          <a href="/" class="link phoneLink">Privacy Policy</a>
+          <a href="/" class="link phoneLink">Terms Of Use Seller</a>
+          <a href="/" class="link phoneLink"
+            >Terms of Use Sellers & Customers</a
+          >
+        </div>
+        <div class="download">
+          <div class="contactSales_footer" onclick="switchVisible_form()">
+            <p class="contactSales_text">Contact sales</p>
+          </div>
+          <img
+            src="images/appstore.svg"
+            alt="appstore"
+            class="download_margin"
+          />
+          <img src="images/googleplay.svg" alt="googleplay" />
+        </div>
+      </div>
+      <div class="bottomFooter">
+        <p class="copyright">© Copyright 2023, All Rights Reserved by Budss</p>
+        <div class="bottomFooter_links">
+          <a href="/" class="footerLink">Privacy Policy</a>
+          <a href="/" class="footerLink">Terms Of Use - Seller</a>
+          <a href="/" class="footerLink">Terms of Use - Sellers & Customers</a>
+        </div>
+      </div>
+    </footer>
     <script src="script.js"></script>
     <script src="../../node_modules//jquery/dist/jquery.js"></script>
     <script src="../../node_modules/jquery-validation/dist/jquery.validate.js"></script>

@@ -14,7 +14,9 @@ h5 {
   font-weight: 700;
 }
 
-.contactSales_text {
+.contactSales_text,
+.contentAccept,
+.contentDecline {
   font-size: 20px;
   line-height: 25px;
   font-weight: 600;
@@ -124,6 +126,13 @@ h5 {
   font-weight: 400;
 }
 
+.contentCookies {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #383838;
+}
+
 .link {
   color: white;
   font-size: 20px;
@@ -199,6 +208,14 @@ input {
   color: #444444;
   text-align: center;
   margin-top: 20px;
+}
+
+.contentAccept {
+  color: white;
+}
+
+.contentDecline {
+  color: black;
 }
 
 @media (min-width: 1440px) {
@@ -290,6 +307,10 @@ input {
     width: 345px;
     font-size: 24px;
     line-height: 28px;
+  }
+
+  .contentCookies {
+    width: 783px;
   }
 
   .link {

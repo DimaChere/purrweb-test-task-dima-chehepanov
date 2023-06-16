@@ -1,11 +1,13 @@
 /* HEADER */
 header {
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   justify-content: start;
   height: 38px;
-  width: 100vw;
+  width: 100%;
   background-color: #ffaa4c;
+  overflow: hidden;
 }
 
 .headerOption {
