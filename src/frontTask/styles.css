@@ -11,6 +11,8 @@
 @import url(styles/footer.css);
 @import url(styles/menuScreen.css);
 @import url(styles/contactSales.css);
+@import url(styles/cookes.css);
+
 body {
   background-color: #181818;
   font-family: "Outfit", sans-serif;

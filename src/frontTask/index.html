@@ -24,9 +24,9 @@
         src="./images/menu.svg"
         alt="menu"
         class="menu"
-        onclick="switchVisible()"
+        onclick="switchVisible_menu()"
       />
-      <div class="contactSales displayNone">
+      <div class="contactSales displayNone" onclick="switchVisible_form()">
         <p class="contactSales_text">Contact sales</p>
       </div>
     </section>
@@ -43,7 +43,7 @@
               acquisition and retention of customers to your business.
             </p>
           </div>
-          <div class="contactSales">
+          <div class="contactSales" onclick="switchVisible_form()">
             <p class="contactSales_text">Contact sales</p>
           </div>
         </div>
@@ -285,7 +285,7 @@
       <div class="business">
         <article class="letYourBusinesGrow">
           <h2 class="headlineBusiness_small">Let Your Business Grow</h2>
-          <div class="contactSales">
+          <div class="contactSales" onclick="switchVisible_form()">
             <p class="contactSales_text">Contact sales</p>
           </div>
         </article>
@@ -346,7 +346,7 @@
             >
           </div>
           <div class="download">
-            <div class="contactSales_footer">
+            <div class="contactSales_footer" onclick="switchVisible_form()">
               <p class="contactSales_text">Contact sales</p>
             </div>
             <img
@@ -377,9 +377,9 @@
           src="./images/cross.svg"
           alt=""
           class="cross"
-          onclick="switchHiden()"
+          onclick="switchHiden_menu()"
         />
-        <div class="contactSales">
+        <div class="contactSales" onclick="switchVisible_form()">
           <p class="contactSales_text">Contact sales</p>
         </div>
         <div class="footerLinks marginNone">
@@ -393,37 +393,45 @@
         </div>
       </div>
       <div class="contactSales_container">
-        <form action="" class="contactSales_form">
+        <form action="" class="contactSales_form" onsubmit="return false;">
           <img
             src="images/cross_small.svg"
             alt="cross_small"
             class="cross_small"
+            onclick="switchHiden_form()"
           />
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" placeholder="Enter name" />
-          <label for="email">Email</label>
+          <label for="name" class="label">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter name"
+            required
+          />
+          <label for="email" class="label">Email</label>
           <input
             type="email"
             name="email"
             id="email"
             placeholder="Enter email"
+            required
           />
-          <label for="phone">Phone number</label>
+          <label for="phone" class="label">Phone number</label>
           <input
-            type="phone"
+            type="text"
             name="phone"
-            pattern="^\+7[1-9]{10}$"
             id="phone"
             placeholder="+ 7 999 999 99 99"
+            required
           />
-          <label for="company">Company</label>
+          <label for="company" class="label">Company</label>
           <input
             type="text"
             name="company"
             id="company"
             placeholder="Enter company"
           />
-          <label for="website">Website/Store URL</label>
+          <label for="website" class="label">Website/Store URL</label>
           <input
             type="text"
             name="website"
@@ -431,17 +439,45 @@
             placeholder="Enter Website/Store URL"
           />
 
+          <p class="requiredMessage">Please, fill all required fields</p>
+
           <p class="contentPrivacyPolicy">
             By submitting this form you are agreeing to Budss’s
             <a href="" class="form_link">Privacy Policy</a> and
             <a href="" class="form_link">Terms of Use</a>
           </p>
-          <input type="submit" class="contactSales_form_btn">
-            <p class="contactSales_text">Contact sales</p>
-          </input>
+          <input
+            type="submit"
+            value="Contact sales"
+            class="contactSales_form_btn contactSales_text"
+            onclick="showThanks()"
+          />
         </form>
+        <div class="thanks">
+          <img
+            src="images/cross_small.svg"
+            alt="cross_small"
+            class="cross_small"
+            onclick="switchHideThanks()"
+          />
+          <img src="images/thankGuy.svg" alt="thankGuy" class="thankGuy" />
+          <h2 class="headlineThanks">Thank you!</h2>
+          <p class="contentThanks">
+            Thank you, we have received your application and will contact you
+            soon!
+          </p>
+          <div class="thanks_btn" onclick="switchHideThanks()">
+            <p class="contactSales_text">Super!</p>
+          </div>
+        </div>
       </div>
     </main>
     <script src="script.js"></script>
+    <script src="../../node_modules//jquery/dist/jquery.js"></script>
+    <script src="../../node_modules/jquery-validation/dist/jquery.validate.js"></script>
+    <script>
+      $(".contactSales_form").validate();
+    </script>
+    <!-- <script src="./validate-form.js"></script> -->
   </body>
 </html>

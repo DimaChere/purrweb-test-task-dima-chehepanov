@@ -59,17 +59,22 @@ h5 {
 .headlineBusiness {
   margin-bottom: 20px;
 }
-
-.contentSmall {
+.headlineThanks {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #a64ced;
+  margin-top: 20px;
+}
+.contentSmall,
+.requiredMessage,
+.contentAboutUs {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
 }
 
 .contentAboutUs {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
   margin-top: 16px;
 }
 
@@ -147,14 +152,22 @@ h5 {
   font-weight: 600;
 }
 
-label {
+.label {
   color: #070707;
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
+  margin-top: 10px;
+}
+label {
+  color: #ec1211;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
 }
 
 input {
+  font-family: "Outfit", sans-serif;
   font-size: 14px;
   line-height: 22px;
   font-weight: 400;
@@ -171,6 +184,23 @@ input {
 .form_link {
   color: #954ced;
 }
+
+.requiredMessage {
+  display: none;
+  margin-top: 20px;
+  color: #ec1211;
+}
+
+.contentThanks {
+  width: 295px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #444444;
+  text-align: center;
+  margin-top: 20px;
+}
+
 @media (min-width: 1440px) {
   /* TEXT CONTENT */
   .headline,
@@ -202,6 +232,11 @@ input {
     font-size: 48px;
     line-height: 60px;
     font-weight: 600;
+  }
+
+  .headlineThanks {
+    font-size: 36px;
+    line-height: 45px;
   }
 
   .contentSmall {
@@ -249,6 +284,12 @@ input {
 
   .contentBusiness {
     width: 66%;
+  }
+
+  .contentThanks {
+    width: 345px;
+    font-size: 24px;
+    line-height: 28px;
   }
 
   .link {
