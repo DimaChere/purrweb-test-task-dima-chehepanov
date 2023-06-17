@@ -1,5 +1,6 @@
 /* HEADER */
 header {
+  z-index: 3;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;

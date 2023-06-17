@@ -17,6 +17,7 @@
 }
 
 .dot {
+  position: relative;
   height: 20px;
   width: 20px;
   border-radius: 50%;
@@ -37,6 +38,7 @@
 }
 
 .slide {
+  position: relative;
   display: none;
   width: 100%;
   -webkit-touch-callout: none; /* iOS Safari */
@@ -53,6 +55,7 @@
   overflow-x: hidden;
   width: 60%;
 }
+
 #slide {
   display: none;
   width: 60%;
@@ -75,6 +78,10 @@
 .controlBtn:hover {
   background-color: rgba(211, 211, 211, 0.5);
   border: 2px solid rgba(211, 211, 211, 0.2);
+}
+
+.disabled {
+  pointer-events: none;
 }
 
 .arrow {

@@ -16,6 +16,7 @@ footer {
   background-color: #954ced;
   border-radius: 16px;
   margin: 40px 0px;
+  border: 2px solid #954ced;
 }
 
 .contactSales_footer:hover {

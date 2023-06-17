@@ -1,4 +1,12 @@
 /* TEXT CONTENT */
+/* :root {
+  --T1_128: 128px;
+  --T1_Bold:
+  --T2_Bold_96: 98px;
+  --T3_Bold_64: 64px;
+  --T4_Bold_
+} */
+
 p,
 h1,
 h2,
@@ -17,9 +25,11 @@ h5 {
 .contactSales_text,
 .contentAccept,
 .contentDecline {
+  position: relative;
   font-size: 20px;
   line-height: 25px;
   font-weight: 600;
+  z-index: 1;
 }
 
 .headlineSmall {

@@ -36,5 +36,62 @@ footer {
   cursor: pointer;
 }
 
+.animatedButton {
+  cursor: pointer;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.animatedButton:hover {
+  will-change: transform;
+  z-index: 0;
+}
+
+.animatedButton:hover:after {
+  transform: translate(0);
+  z-index: 0;
+}
+.animatedButton::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%) rotate(10deg);
+  transform-origin: top left;
+  transition: background-color 0.2s ease, border-color 0.2s ease,
+    color 0.2s ease, fill 0.2s ease, transform 0.2s ease-in-out;
+  will-change: transform;
+  z-index: -1;
+  border-radius: 10px;
+  background-color: #181818;
+}
+.animatedButton:focus {
+  border: 2px solid rgba(149, 76, 237, 0.2);
+  outline: 2px solid #954ced;
+}
+.white {
+  border: none;
+}
+
+.white:focus {
+  border: 4px solid #ba8bf3;
+}
+
+.animatedButton:active {
+  border: 2px solid #a64ced;
+}
+
+.white:active {
+  border: none;
+  background-color: #7b31d4;
+}
+
 @media (min-width: 1440px) {
 }

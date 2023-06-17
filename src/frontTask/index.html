@@ -25,7 +25,10 @@
         class="menu"
         onclick="switchVisible_menu()"
       />
-      <div class="contactSales displayNone" onclick="switchVisible_form()">
+      <div
+        class="contactSales displayNone animatedButton"
+        onclick="switchVisible_form()"
+      >
         <p class="contactSales_text">Contact sales</p>
       </div>
     </section>
@@ -42,7 +45,10 @@
               acquisition and retention of customers to your business.
             </p>
           </div>
-          <div class="contactSales" onclick="switchVisible_form()">
+          <div
+            class="contactSales animatedButton"
+            onclick="switchVisible_form()"
+          >
             <p class="contactSales_text">Contact sales</p>
           </div>
         </div>
@@ -284,7 +290,10 @@
       <div class="business">
         <article class="letYourBusinesGrow">
           <h2 class="headlineBusiness_small">Let Your Business Grow</h2>
-          <div class="contactSales" onclick="switchVisible_form()">
+          <div
+            class="contactSales animatedButton white"
+            onclick="switchVisible_form()"
+          >
             <p class="contactSales_text">Contact sales</p>
           </div>
         </article>
@@ -336,7 +345,7 @@
           class="cross"
           onclick="switchHiden_menu()"
         />
-        <div class="contactSales" onclick="switchVisible_form()">
+        <div class="contactSales animatedButton" onclick="switchVisible_form()">
           <p class="contactSales_text">Contact sales</p>
         </div>
         <div class="footerLinks marginNone">
@@ -357,7 +366,7 @@
             class="cross_small"
             onclick="switchHiden_form()"
           />
-          <label for="name" class="label">Name</label>
+          <label for="name" class="label require">Name</label>
           <input
             type="text"
             name="name"
@@ -365,7 +374,7 @@
             placeholder="Enter name"
             required
           />
-          <label for="email" class="label">Email</label>
+          <label for="email" class="label require">Email</label>
           <input
             type="email"
             name="email"
@@ -373,11 +382,12 @@
             placeholder="Enter email"
             required
           />
-          <label for="phone" class="label">Phone number</label>
+          <label for="phone" class="label require">Phone number</label>
           <input
             type="text"
             name="phone"
             id="phone"
+            class="phone"
             placeholder="+ 7 999 999 99 99"
             required
           />
@@ -406,7 +416,8 @@
           <input
             type="submit"
             value="Contact sales"
-            class="contactSales_form_btn contactSales_text"
+            class="contactSales_text animatedButton"
+            id="contactSales_form_btn"
             onclick="showThanks()"
           />
         </form>
@@ -423,7 +434,10 @@
             Thank you, we have received your application and will contact you
             soon!
           </p>
-          <div class="thanks_btn" onclick="switchHideThanks()">
+          <div
+            class="thanks_btn animatedButton white"
+            onclick="switchHideThanks()"
+          >
             <p class="contactSales_text">Super!</p>
           </div>
         </div>
@@ -442,7 +456,7 @@
             constantly improve the website for you.
           </p>
           <div class="agreeBlock">
-            <div class="acceptBtn">
+            <div class="acceptBtn animatedButton white">
               <p class="contentAccept" onclick="hideCookies()">Accept</p>
             </div>
             <div class="declineBtn">
@@ -468,7 +482,10 @@
           >
         </div>
         <div class="download">
-          <div class="contactSales_footer" onclick="switchVisible_form()">
+          <div
+            class="contactSales_footer animatedButton"
+            onclick="switchVisible_form()"
+          >
             <p class="contactSales_text">Contact sales</p>
           </div>
           <img
@@ -494,6 +511,5 @@
     <script>
       $(".contactSales_form").validate();
     </script>
-    <!-- <script src="./validate-form.js"></script> -->
   </body>
 </html>

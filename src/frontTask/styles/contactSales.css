@@ -24,10 +24,20 @@
   background-color: white;
   border-radius: 20px;
 }
+
+.require::after {
+  content: " *";
+  color: #ffaa4c;
+}
 .cross_small {
   position: absolute;
   top: 8px;
   right: 16px;
+}
+
+#phone {
+  background: url(../images/russian-federation.svg) no-repeat center left 16px;
+  padding-left: 40px;
 }
 
 input {
@@ -49,7 +59,7 @@ input:nth-child(11) {
 label:nth-child(2) {
   margin-top: 0px;
 }
-.contactSales_form_btn {
+#contactSales_form_btn {
   box-sizing: border-box;
   margin: 0;
   text-align: center;
@@ -58,16 +68,17 @@ label:nth-child(2) {
   background-color: #b9b9b9;
   border-radius: 16px;
   color: white;
+  overflow: visible;
 }
 .error {
   border-color: #ec1211;
 }
 
-form:valid input[type="submit"] {
+form:valid #contactSales_form_btn {
   background-color: #954ced;
 }
 
-form:invalid input[type="submit"] {
+form:invalid #contactSales_form_btn {
   background-color: #b9b9b9;
 }
 
@@ -107,10 +118,14 @@ form:invalid input[type="submit"] {
   .contactSales_form {
     padding: 40px;
   }
-  .contactSales_form_btn {
+
+  #contactSales_form_btn {
     width: 182px;
   }
 
+  #phone {
+    padding-left: 48px;
+  }
   .thanks {
     padding-left: 36px;
     padding-right: 36px;
