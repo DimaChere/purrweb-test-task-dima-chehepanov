@@ -28,6 +28,7 @@
 }
 
 .menu {
+  cursor: pointer;
   width: 26px;
 }
 
