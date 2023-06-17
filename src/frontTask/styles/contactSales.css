@@ -30,6 +30,7 @@
   color: #ffaa4c;
 }
 .cross_small {
+  cursor: pointer;
   position: absolute;
   top: 8px;
   right: 16px;

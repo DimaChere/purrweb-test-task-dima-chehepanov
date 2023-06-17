@@ -13,6 +13,7 @@
   padding-bottom: 24vh;
 }
 .cross {
+  cursor: pointer;
   width: 40px;
   margin-left: auto;
 }
