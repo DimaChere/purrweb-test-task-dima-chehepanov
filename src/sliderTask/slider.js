@@ -2,7 +2,7 @@ let slideIndex = 1;
 let prevSlide;
 let isAnimating = false;
 
-let stylesControl = (control) => {
+let arrowControl = (control) => {
   if (!isAnimating) {
     isAnimating = true;
     prevSlide = slideIndex;
@@ -105,6 +105,7 @@ function changeSlide_btn(number, right) {
     }
   }, 20);
 }
+
 function showSlide(number) {
   let slide = document.getElementsByClassName("slide");
   let dots = document.getElementsByClassName("dot");
